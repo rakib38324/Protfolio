@@ -10,18 +10,12 @@ const Home = () => {
     return (
         <div >
 
-            {/* <div className='col-span-8'>
-                    <h1>frontend Developer</h1>
-            </div>
-
-            <div>
-                    <img className='w-full' src={img} alt="" />
-            </div> */}
+        
 
             <div className="hero bg-base-200">
-                <div className="grid lg:grid-cols-12 p-4">
+                <div className="lg:grid lg:grid-cols-12 p-4">
 
-                    <div className='lg:col-span-8 m-6'>
+                    <div className='sm:pt-2 lg:col-span-8 lg:m-6'>
                         <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
                             <span className='text-2xl lg:text-4xl font-bold'>Hi, I am <span className='font-bold'>MD. Aminul Islam Rakib</span> <br /> <>I am a </></span>{' '}
 
@@ -49,8 +43,8 @@ const Home = () => {
 
                     </div>
 
-                    <div className='col-span-4'>
-                        <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
+                    <div className='col-span-4 pt-2'>
+                        <img src={img} className="sm:w-4/3 lg:max-w-sm rounded-lg shadow-2xl" />
                     </div>
                 </div>
             </div>
