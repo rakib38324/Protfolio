@@ -1,43 +1,60 @@
 import React from 'react';
 import { FaDownload } from "react-icons/fa";
+import img from '../../src/images/rakib.jpg'
+import { Typewriter } from 'react-simple-typewriter'
+
 
 const Home = () => {
+
+
     return (
-        <div>
-            <div className="navbar bg-base-100">
-                <div className="navbar-start">
-                    <div className="dropdown">
-                        <label tabIndex={0} className="btn btn-ghost lg:hidden">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                        </label>
-                        <ul tabIndex={0} className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li tabIndex={0}>
-                                <a className="justify-between">
-                                    Parent
-                                    <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
-                                </a>
-                                <ul className="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
-                        </ul>
+        <div >
+
+            {/* <div className='col-span-8'>
+                    <h1>frontend Developer</h1>
+            </div>
+
+            <div>
+                    <img className='w-full' src={img} alt="" />
+            </div> */}
+
+            <div className="hero bg-base-200">
+                <div className="grid lg:grid-cols-12 p-4">
+
+                    <div className='lg:col-span-8 m-6'>
+                        <h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+                            <span className='text-2xl lg:text-4xl font-bold'>Hi, I am <span className='font-bold'>MD. Aminul Islam Rakib</span> <br /> <>I am a </></span>{' '}
+
+                            <span className='text-2xl lg:text-4xl' style={{ color: 'red', fontWeight: 'bold' }}>
+                                {/* Style will be inherited from the parent element */}
+                                <Typewriter
+                                    words={['MERN Stack Developer.', 'React Developer.', 'JavaScript Developer.', 'Front-end Developer.']}
+                                    loop={100}
+                                    cursor
+                                    cursorStyle='_'
+                                    typeSpeed={70}
+                                    deleteSpeed={50}
+                                    delaySpeed={1000}
+                                
+                                />
+                            </span>
+
+                        </h1>
+                        <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolorum corporis atque, officiis velit autem aperiam magnam iure quidem vel quo harum quos aspernatur veritatis nam porro officia distinctio illo?</p>
+
+
+
+                        <button className="btn mt-9 bg-base-100 border-white text-black hover:bg-base-100"> <FaDownload> </FaDownload> <span className='pl-2'>Resume</span></button>
+
+
                     </div>
-                    <a className="btn btn-ghost normal-case text-xl">Aminul Islam Rakib</a>
-                </div>
-                <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
-                        <li><a>Item 1</a></li>
-                        
-                        <li><a>Item 3</a></li>
-                    </ul>
-                </div>
-                <div className="navbar-end">
-                    <a className="btn bg-base-300 text-black hover:bg-base-100"><FaDownload> </FaDownload> <span className='pl-2'>Resume</span></a>
+
+                    <div className='col-span-4'>
+                        <img src={img} className="max-w-sm rounded-lg shadow-2xl" />
+                    </div>
                 </div>
             </div>
+
         </div>
     );
 };
