@@ -10,9 +10,9 @@ const Aboutme = () => {
     return (
         <div id='project' className="hero bg-base-200">
             <div className="hero-content flex-col lg:flex-row-reverse">
-                <div className="text-center lg:w-1/2">
+                <div className=" lg:w-1/2">
                     <h1 className="text-4xl font-bold">About Me</h1>
-                    <p className="py-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, doloremque quia praesentium unde eum deserunt cumque quisquam magnam maiores, iusto et minus eaque voluptates quidem suscipit! Nobis velit quos vitae.</p>
+                    <p className="py-6">Hello, I am MD. Aminul Islam Rakib. I am student of Computer Science and Engineering Student on Daffodil International University. I want make me a successful Web Developer.</p>
                 </div>
                 <div className='lg:w-1/2'>
                     <h1 className="text-4xl font-bold mb-2 text-center">My Skill</h1>

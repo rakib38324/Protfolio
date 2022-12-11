@@ -1,20 +1,23 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 
 const Contactme = () => {
     const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
+    const sendEmail = (e) => {
+        e.preventDefault();
 
-    emailjs.sendForm('service_qg9difq', 'template_s321n0p', form.current, 'sBDOXzE5rZJM8v5YL')
-      .then((result) => {
-          console.log(result.text);
-          console.log('email send')
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
+        emailjs.sendForm('service_qg9difq', 'template_s321n0p', form.current, 'sBDOXzE5rZJM8v5YL')
+            .then((result) => {
+                console.log(result.text);
+                console.log('email send');
+                toast.success("Email Send Successfully")
+
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
     return (
         <div className="hero bg-base-200 my-5 rounded-lg p-5">
             <div className="lg:w-3/4">
@@ -38,7 +41,7 @@ const Contactme = () => {
                                 <span className="label-text">Your Message</span>
                             </label>
                             <textarea name='message' className="textarea textarea-bordered" placeholder="Your message"></textarea>
-                           
+
                         </div>
                         <div className="form-control mt-6">
                             <button className="btn btn-primary">Submit</button>

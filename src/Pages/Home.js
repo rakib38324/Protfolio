@@ -2,9 +2,13 @@ import React from 'react';
 import { FaDownload, FaLinkedin, FaFacebookSquare, FaWhatsappSquare, FaGithubSquare } from "react-icons/fa";
 import img from '../../src/images/rakib.jpg'
 import { Typewriter } from 'react-simple-typewriter'
+import axios from 'axios'
+import fileDownload from 'js-file-download'
 
 
 const Home = () => {
+
+    
 
 
     return (
@@ -40,7 +44,11 @@ const Home = () => {
 
 
 
-                        <button className="btn mt-9 bg-base-100 border-white text-black hover:bg-base-100"> <FaDownload> </FaDownload> <span className='pl-2'>Resume</span></button>
+                        
+
+                        <a href="Aminul_Islam_Rakib_Resume.pdf" download='Aminul_Islam_Rakib_Resume.pdf'><button  className="btn mt-9 bg-base-100 border-white text-black hover:bg-base-100"> <FaDownload> </FaDownload> <span className='pl-2'>Resume</span></button></a>
+
+
 
                         <div>
 
