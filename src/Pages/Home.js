@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaDownload } from "react-icons/fa";
+import { FaDownload, FaLinkedin, FaFacebookSquare, FaWhatsappSquare,FaGithubSquare } from "react-icons/fa";
 import img from '../../src/images/rakib.jpg'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div >
 
-        
+
 
             <div className="hero bg-base-200">
                 <div className="lg:grid lg:grid-cols-12 p-4">
@@ -29,7 +29,7 @@ const Home = () => {
                                     typeSpeed={70}
                                     deleteSpeed={50}
                                     delaySpeed={1000}
-                                
+
                                 />
                             </span>
 
@@ -40,6 +40,13 @@ const Home = () => {
 
                         <button className="btn mt-9 bg-base-100 border-white text-black hover:bg-base-100"> <FaDownload> </FaDownload> <span className='pl-2'>Resume</span></button>
 
+                        <div>
+                            
+                            <a href="https://www.linkedin.com/in/aminulislamrakib3832/" target="_blank"><button className='text-4xl mt-4'><FaLinkedin></FaLinkedin></button></a>
+                            <a href="https://wa.link/01dmbn" target="_blank"><button className='text-4xl mt-4'><FaWhatsappSquare></FaWhatsappSquare></button></a>
+                            <a href="https://www.facebook.com/Rakib3832" target="_blank"><button className='text-4xl mt-4'><FaFacebookSquare></FaFacebookSquare></button></a>
+                            <a href="https://github.com/rakib38324" target="_blank"><button className='text-4xl mt-4'><FaGithubSquare></FaGithubSquare></button></a>
+                        </div>
 
                     </div>
 

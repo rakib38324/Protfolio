@@ -6,10 +6,12 @@ import Footer from './Pages/Footer';
 import Aboutme from './Pages/Aboutme';
 import Project from './Pages/Project';
 
+
+
 function App() {
   return (
     <div className='max-w-7xl mx-auto'>
-      <Navbar></Navbar>
+      
       <Home></Home>
       <Project></Project>
       <Aboutme></Aboutme>
