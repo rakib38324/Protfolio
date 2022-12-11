@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaDownload, FaLinkedin, FaFacebookSquare, FaWhatsappSquare,FaGithubSquare } from "react-icons/fa";
+import { FaDownload, FaLinkedin, FaFacebookSquare, FaWhatsappSquare, FaGithubSquare } from "react-icons/fa";
 import img from '../../src/images/rakib.jpg'
 import { Typewriter } from 'react-simple-typewriter'
 
@@ -34,14 +34,16 @@ const Home = () => {
                             </span>
 
                         </h1>
-                        <p className='mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, dolorum corporis atque, officiis velit autem aperiam magnam iure quidem vel quo harum quos aspernatur veritatis nam porro officia distinctio illo?</p>
+                        <p className='mt-2'>I want to take on the challenge of web development. Where I can refine my skill and expand my
+                            knowledge. As an engineering student, I know how to handle situations during complicated
+                            times.</p>
 
 
 
                         <button className="btn mt-9 bg-base-100 border-white text-black hover:bg-base-100"> <FaDownload> </FaDownload> <span className='pl-2'>Resume</span></button>
 
                         <div>
-                            
+
                             <a href="https://www.linkedin.com/in/aminulislamrakib3832/" target="_blank"><button className='text-4xl mt-4'><FaLinkedin></FaLinkedin></button></a>
                             <a href="https://wa.link/01dmbn" target="_blank"><button className='text-4xl mt-4'><FaWhatsappSquare></FaWhatsappSquare></button></a>
                             <a href="https://www.facebook.com/Rakib3832" target="_blank"><button className='text-4xl mt-4'><FaFacebookSquare></FaFacebookSquare></button></a>

@@ -5,6 +5,7 @@ import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import Aboutme from './Pages/Aboutme';
 import Project from './Pages/Project';
+import Contactme from './Pages/Contactme';
 
 
 
@@ -15,6 +16,7 @@ function App() {
       <Home></Home>
       <Project></Project>
       <Aboutme></Aboutme>
+      <Contactme></Contactme>
       <Footer></Footer>
     </div>
   );
